@@ -13,9 +13,9 @@ This repository contains the implementation and evaluation of the Weighted Itera
 
 ## WICP Algorithm
 
-The WICP algorithm optimizes the alignment of point clouds by combining point-to-point loss and point-to-plane loss. A weight term, \( \alpha \), is used to balance these losses:
-- \( \alpha \): The weight for the point-to-plane loss.
-- \( 1 - \alpha \): The weight for the point-to-point loss.
+The WICP algorithm optimizes the alignment of point clouds by combining point-to-point loss and point-to-plane loss. A weight term, "α", is used to balance these losses:
+- α: The weight for the point-to-plane loss.
+- 1 - α: The weight for the point-to-point loss.
 
 This allows the algorithm to adaptively emphasize either loss term based on the given dataset or requirements.
 
