@@ -13,9 +13,9 @@ This repository contains the implementation and evaluation of the Weighted Itera
 
 ## WICP Algorithm
 
-The WICP algorithm optimizes the alignment of point clouds by combining point-to-point loss and point-to-plane loss. A weight term, \(\alpha\), is used to balance these losses:
-- \(\alpha\): The weight for the point-to-plane loss.
-- \(1 - \alpha\): The weight for the point-to-point loss.
+The WICP algorithm optimizes the alignment of point clouds by combining point-to-point loss and point-to-plane loss. A weight term, \( \alpha \), is used to balance these losses:
+- \( \alpha \): The weight for the point-to-plane loss.
+- \( 1 - \alpha \): The weight for the point-to-point loss.
 
 This allows the algorithm to adaptively emphasize either loss term based on the given dataset or requirements.
 
@@ -33,12 +33,12 @@ This allows the algorithm to adaptively emphasize either loss term based on the 
 
 ### 3. Error Comparison
 - **File:** `error_comparsion.png`
-- **Description:** This plot compares the error metrics for different values of \(\alpha\). \(\alpha\) is the weight for the point-to-plane loss, while \(1 - \alpha\) is the weight for the point-to-point loss.
+- **Description:** This plot compares the error metrics for different values of \( \alpha \). \( \alpha \) is the weight for the point-to-plane loss, while \( 1 - \alpha \) is the weight for the point-to-point loss.
 - ![Error Comparison](error_comparsion.png)
 
 ### 4. Trajectory Evaluation
 - **File:** `traj_eval.png`
-- **Description:** A plot showing the evaluation metrics for the trajectory estimated by the WICP algorithm, with comparisons based on different values of \(\alpha\).
+- **Description:** A plot showing the evaluation metrics for the trajectory estimated by the WICP algorithm, with comparisons based on different values of \( \alpha \).
 - ![Trajectory Evaluation](traj_eval.png)
 
 ## How to Run
@@ -56,4 +56,3 @@ This allows the algorithm to adaptively emphasize either loss term based on the 
 - Use `traj_plot.py` to generate custom trajectory plots for different datasets.
 
 Feel free to explore and modify the code to suit your project needs.
-
