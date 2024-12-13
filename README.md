@@ -11,26 +11,34 @@ This repository contains the implementation and evaluation of the Weighted Itera
 - **output/**: Directory for storing output files.
 - **__pycache__/**: Cache directory for Python compiled files.
 
+## WICP Algorithm
+
+The WICP algorithm optimizes the alignment of point clouds by combining point-to-point loss and point-to-plane loss. A weight term, \(\alpha\), is used to balance these losses:
+- \(\alpha\): The weight for the point-to-plane loss.
+- \(1 - \alpha\): The weight for the point-to-point loss.
+
+This allows the algorithm to adaptively emphasize either loss term based on the given dataset or requirements.
+
 ## Visualizations
 
-### 1. Error Comparison
-- **File:** `error_comparsion.png`
-- **Description:** This plot compares the error metrics of different iterations or configurations of the WICP algorithm.
-- ![Error Comparison](error_comparsion.png)
-
-### 2. Map Visualization
+### 1. Map Visualization
 - **File:** `map.png`
 - **Description:** A visualization of the map generated or used during the execution of the WICP algorithm.
 - ![Map](map.png)
 
-### 3. Normal Candidates
+### 2. Normal Candidates
 - **File:** `normal_candidate.png`
-- **Description:** Displays the normal candidates used in the point cloud alignment process.
+- **Description:** Displays the normal candidates used in the point cloud alignment process. Blue points represent non-planar regions, while red points represent planar regions.
 - ![Normal Candidates](normal_candidate.png)
+
+### 3. Error Comparison
+- **File:** `error_comparsion.png`
+- **Description:** This plot compares the error metrics for different values of \(\alpha\). \(\alpha\) is the weight for the point-to-plane loss, while \(1 - \alpha\) is the weight for the point-to-point loss.
+- ![Error Comparison](error_comparsion.png)
 
 ### 4. Trajectory Evaluation
 - **File:** `traj_eval.png`
-- **Description:** A plot showing the evaluation metrics for the trajectory estimated by the WICP algorithm.
+- **Description:** A plot showing the evaluation metrics for the trajectory estimated by the WICP algorithm, with comparisons based on different values of \(\alpha\).
 - ![Trajectory Evaluation](traj_eval.png)
 
 ## How to Run
