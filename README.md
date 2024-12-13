@@ -1,4 +1,4 @@
-# WICP Project
+# Weighted ICP
 
 This repository contains the implementation and evaluation of the Weighted Iterative Closest Point (WICP) algorithm. Below is a summary of the contents of this project and the associated visualizations.
 
